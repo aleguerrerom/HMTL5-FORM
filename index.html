@@ -6,9 +6,12 @@
       <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Document</title>
+     <!--FONTAWESOME-->
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-       <div class="container border border-secondary  mt-5" style="background-color: rgb(179, 174, 174);">
+       <div class="container border border-secondary py-3 mt-5" style="background-color:rgb(223, 219, 219);">
           <h2>Payment from example</h2>
        </div>
        <!--formulario-->
@@ -77,8 +80,31 @@
              </div>
             <div class="row">
                 <div class="col">
-                        <label class="inputAddress mt-3"><strong>We Accept: </strong></label>
-                       <br> <img class ="mt-3" src="tarjeta.png">     
+                   
+                             <label class="inputAddress mt-3"><strong>We Accept: </strong> </label> <br>
+                              <div class="bg-secondary mt-3 float-start px-2"></div>
+                                <div class="bg-secondary mt-3 float-start px-2">
+                                  <div class="form-check form-check-inline bg-secondary">
+                                        <input class="form-check-input " type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><i class="fab fa-cc-mastercard text-white"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline bg-secondary">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-visa text-white"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline bg-secondary">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3"> 
+                                        <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-amex text-white"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline bg-secondary">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4"><i class="fab fa-cc-visa text-white"></i></label>
+                                    </div>
+                                </div>
                 </div>
                  <div class="col">
                         <label for="inputAddress " style="margin-top: 15px;"><strong>Message</strong></label> <br>
@@ -88,18 +114,14 @@
             </div>
    </div>
    </form>
-</div>
-<div class="container border border-secondary pull-right" style="background-color: rgb(223, 219, 219);">
+
+<div class="container border border-secondary float-end" style="background-color: rgb(223, 219, 219);">
     <div class="row">
-             <div class="col"></div>
-             <div class="col"></div>
-             <div class="col"></div>
-             <div class="col"></div>
-             <div class="col"></div>
-             <div class="col">
-                 <button type="submit" class="btn btn-secondary pull-right mt-3" >Cancel</button>
-                 <button type="submit" class="btn btn-info pull-right mt-3"  >Send</button>
+             <div class="col float-right" >
+                 <button type="submit" class="btn btn-secondary my-3" style="float :right !important">Cancel</button>
+                 <button type="submit" class="btn btn-info my-3 mx-3" style="float :right !important">Send</button>
              </div>
+</div>
 </div>
 <!-- javascript scripts -->
 <script type="text/javascript" src="yourPath/jquery-1.10.2.min.js"></script>
